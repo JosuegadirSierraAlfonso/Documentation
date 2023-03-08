@@ -1,9 +1,10 @@
-//                                      concat 
-/* The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.*/
+//                                      indexOf 
+/* El método indexOf() retorna el primer índice en el que se puede encontrar un elemento dado en el array, ó retorna -1 si el elemento no esta presente.*/
 
-const array1 = ['a', 'b', 'c'];
-const array2 = ['d', 'e', 'f'];
-const array3 = array1.concat(array2);
-
-console.log(array3);
-// Expected output: Array ["a", "b", "c", "d", "e", "f"]
+const numbers = [45, 73, 12, 98, 7, 30, 12, 85]
+console.log(numbers.indexOf(12))
+// Expected output: 2
+console.log(numbers.indexOf(12, -4))
+// Expected output: 6
+console.log(numbers.indexOf(20))
+// Expected output: -1
