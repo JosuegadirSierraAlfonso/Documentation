@@ -1,12 +1,13 @@
-//                                      lastIndexOf 
-/* The lastIndexOf() method, given one argument: a substring to search for, 
-searches the entire calling string, and returns the index of the last 
-occurrence of the specified substring. Given a second argument: a number, 
-the method returns the last occurrence of the specified substring at an index less than or equal to the specified number.*/
+//                                      search 
+/* The search() method executes a search for a match between a regular expression and this String object.*/
 
 const paragraph = 'The quick brown fox jumps over the lazy dog. If the dog barked, was it really lazy?';
 
-const searchTerm = 'dog';
+// Any character that is not a word character or whitespace
+const regex = /[^\w\s]/g;
 
-console.log(`The index of the first "${searchTerm}" from the end is ${paragraph.lastIndexOf(searchTerm)}`);
-// Expected output: "The index of the first "dog" from the end is 52"
+console.log(paragraph.search(regex));
+// Expected output: 43
+
+console.log(paragraph[paragraph.search(regex)]);
+// Expected output: "."
