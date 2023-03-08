@@ -1,13 +1,13 @@
-//                                      search 
-/* The search() method executes a search for a match between a regular expression and this String object.*/
+//                                      localeCompare 
+/* The localeCompare() method returns a number indicating whether 
+a reference string comes before, or after, or is the same as the 
+given string in sort order. In implementations with Intl.Collator 
+API support, this method simply calls Intl.Collator.*/
 
-const paragraph = 'The quick brown fox jumps over the lazy dog. If the dog barked, was it really lazy?';
+const a = 'réservé'; // With accents, lowercase
+const b = 'RESERVE'; // No accents, uppercase
 
-// Any character that is not a word character or whitespace
-const regex = /[^\w\s]/g;
-
-console.log(paragraph.search(regex));
-// Expected output: 43
-
-console.log(paragraph[paragraph.search(regex)]);
-// Expected output: "."
+console.log(a.localeCompare(b));
+// Expected output: 1
+console.log(a.localeCompare(b, 'en', { sensitivity: 'base' }));
+// Expected output: 0
