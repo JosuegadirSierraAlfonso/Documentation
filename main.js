@@ -1,10 +1,12 @@
-//                                      indexOf 
-/* El método indexOf() retorna el primer índice en el que se puede encontrar un elemento dado en el array, ó retorna -1 si el elemento no esta presente.*/
+//                                      lastIndexOf 
+/* The lastIndexOf() method, given one argument: a substring to search for, 
+searches the entire calling string, and returns the index of the last 
+occurrence of the specified substring. Given a second argument: a number, 
+the method returns the last occurrence of the specified substring at an index less than or equal to the specified number.*/
 
-const numbers = [45, 73, 12, 98, 7, 30, 12, 85]
-console.log(numbers.indexOf(12))
-// Expected output: 2
-console.log(numbers.indexOf(12, -4))
-// Expected output: 6
-console.log(numbers.indexOf(20))
-// Expected output: -1
+const paragraph = 'The quick brown fox jumps over the lazy dog. If the dog barked, was it really lazy?';
+
+const searchTerm = 'dog';
+
+console.log(`The index of the first "${searchTerm}" from the end is ${paragraph.lastIndexOf(searchTerm)}`);
+// Expected output: "The index of the first "dog" from the end is 52"
