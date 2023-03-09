@@ -1,13 +1,7 @@
-//                                      matchAll 
-/* The matchAll() method returns an iterator of all results matching a string against a regular expression, including capturing groups.*/
+//                                      repeat 
+/* The repeat() method constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together. */
 
-const regexp = /t(e)(st(\d?))/g;
-const str = 'test1test2';
+const mood = 'Happy! ';
 
-const array = [...str.matchAll(regexp)];
-
-console.log(array[0]);
-// Expected output: Array ["test1", "e", "st1", "1"]
-
-console.log(array[1]);
-// Expected output: Array ["test2", "e", "st2", "2"]
+console.log(`I feel ${mood.repeat(3)}`);
+// Expected output: "I feel Happy! Happy! Happy! "
