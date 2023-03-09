@@ -1,17 +1,17 @@
-//                                      Math.cos
-/* The Math.cos() static method returns the cosine of a number in radians.*/
+//                                      Math.sin
+/* The Math.sin() static method returns the sine of a number in radians.*/
 
 
-function getCircleX(radians, radius) {
-    return Math.cos(radians) * radius;
+function getCircleY(radians, radius) {
+    return Math.sin(radians) * radius;
   }
   
-  console.log(getCircleX(1, 10));
-  // Expected output: 5.403023058681398
+  console.log(getCircleY(1, 10));
+  // Expected output: 8.414709848078965
   
-  console.log(getCircleX(2, 10));
-  // Expected output: -4.161468365471424
+  console.log(getCircleY(2, 10));
+  // Expected output: 9.092974268256818
   
-  console.log(getCircleX(Math.PI, 10));
-  // Expected output: -10
+  console.log(getCircleY(Math.PI, 10));
+  // Expected output: 1.2246467991473533e-15
   
