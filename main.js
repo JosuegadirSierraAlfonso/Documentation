@@ -1,13 +1,16 @@
-//                                      Math.min
-/* The Math.min() static method returns the smallest of the numbers given as input parameters, or Infinity if there are no parameters.*/
+//                                      Math.pow
+/* The Math.pow() static method returns the value of a base raised to a power. That is
+𝙼𝚊𝚝𝚑.𝚙𝚘𝚠 ( 𝚡 , 𝚢 ) = x y */
 
-console.log(Math.min(2, 3, 1));
-// Expected output: 1
+console.log(Math.pow(7, 3));
+// Expected output: 343
 
-console.log(Math.min(-2, -3, -1));
-// Expected output: -3
+console.log(Math.pow(4, 0.5));
+// Expected output: 2
 
-const array1 = [2, 3, 1];
+console.log(Math.pow(7, -2));
+// Expected output: 0.02040816326530612
+//                  (1/49)
 
-console.log(Math.min(...array1));
-// Expected output: 1
+console.log(Math.pow(-7, 0.5));
+// Expected output: NaN
