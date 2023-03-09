@@ -1,11 +1,8 @@
-//                           Operador-Estrictamente Desigual         
-/* Returns true if the operands are of the same type but not equal, or are of different types.*/
+//                           mayor que         
+/* Returns true if the left operand is greater than the right operand.*/
 
 const numberOne = 20
-const numberTwo = "30"
-const numberThree = 30
-const numberFour = 30
+const numberTwo = 45
 
-console.log(numberOne !== numberThree) // True
-console.log(numberTwo !== numberThree) // True
-console.log(numberFour !== numberThree) // False
+console.log(numberTwo !== numberOne) // True
+console.log(numberOne > numberTwo) // False
