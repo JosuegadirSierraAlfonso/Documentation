@@ -1,10 +1,8 @@
-//                                      substr 
-/* The substr() method returns a portion of the string, starting at the specified index and extending for a given number of characters afterwards. */
+//                                      substring 
+/* The substring() method returns the part of the string from the start index up to and excluding the end index, or to the end of the string if no end index is supplied.. */
 
-const str = 'Mozilla';
+const anyString = "Mozilla"
 
-console.log(str.substr(1, 2));
-// Expected output: "oz"
+console.log(anyString.substring(0, 6)); // 'Mozill'
 
-console.log(str.substr(2));
-// Expected output: "zilla"
+console.log(anyString.substring(4)); // 'lla'
