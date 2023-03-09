@@ -1,18 +1,12 @@
-//                                      Math.atan2
-/* The Math.atan2() static method returns the angle in the plane (in radians) 
-between the positive x-axis and the ray from (0, 0) to the point (x, y), for Math.atan2(y, x).*/
+//                           Operador-Igual         
+/* “Not strict” and compare only values. Returns true if the operands 
+are equal and false if they are different*/
 
+const numberOne = 20
+const numberTwo = "30"
+const numberThree = 30
+const numberFour = 30
 
-function calcAngleDegrees(x, y) {
-    return Math.atan2(y, x) * 180 / Math.PI;
-  }
-  
-  console.log(calcAngleDegrees(5, 5));
-  // Expected output: 45
-  
-  console.log(calcAngleDegrees(10, 10));
-  // Expected output: 45
-  
-  console.log(calcAngleDegrees(0, 10));
-  // Expected output: 90
-  
+console.log(numberOne == numberThree) // False
+console.log(numberOne == numberTwo) // True
+console.log(numberOne == numberFour) // True
