@@ -1,8 +1,10 @@
-//                                      toUpperCase 
-/* The toUpperCase() method returns the calling string value converted to uppercase (the value will be converted to a string if it isn't one).   */
+//                                      trim 
+/* The trim() method removes whitespace from both ends of a string and returns a new string, without modifying the original string.
+
+To return a new string with whitespace trimmed from just one end, use trimStart() or trimEnd().*/
 
 
-const sentence = 'The quick brown fox jumps over the lazy dog.';
+const greeting = '   Hello world!   '
 
-console.log(sentence.toUpperCase());
-// Expected output: "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG."
+console.log(greeting.trim());
+// Expected output: "Hello world!"
