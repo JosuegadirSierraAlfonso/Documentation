@@ -1,15 +1,15 @@
-//                                      Math.exp
-/* The Math.exp() static method returns e raised to the power of a number. That is    𝙼𝚊𝚝𝚑.𝚎𝚡𝚙 ( 𝚡 ) = e x 
-Because exp() is a static method of Math, you always use it as Math.exp(), rather than as a method of a Math object you created (Math is not a constructor).*/
+//                                      Math.log
+/* The Math.log() static method returns the natural logarithm (base e) of a number. That is
+∀ x > 0 , 𝙼𝚊𝚝𝚑.𝚕𝚘𝚐 ( 𝚡 ) = ln ( x ) = the unique  y  such that  e y = x */
 
-console.log(Math.exp(0));
-// Expected output: 1
-
-console.log(Math.exp(1));
-// Expected output: 2.718281828459 (approximately)
-
-console.log(Math.exp(-1));
-// Expected output: 0.36787944117144233
-
-console.log(Math.exp(2));
-// Expected output: 7.38905609893065
+function getBaseLog(x, y) {
+    return Math.log(y) / Math.log(x);
+  }
+  
+  // 2 x 2 x 2 = 8
+  console.log(getBaseLog(2, 8));
+  // Expected output: 3
+  
+  // 5 x 5 x 5 x 5 = 625
+  console.log(getBaseLog(5, 625));
+  // Expected output: 4
