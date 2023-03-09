@@ -1,8 +1,9 @@
-//                                      substring 
-/* The substring() method returns the part of the string from the start index up to and excluding the end index, or to the end of the string if no end index is supplied.. */
+//                                      split 
+/* The split() method splits an object of type String into an array (vector) of strings by splitting the string into substrings. */
 
-const anyString = "Mozilla"
 
-console.log(anyString.substring(0, 6)); // 'Mozill'
+var miCadena = "Hola Mundo. Cómo estás hoy?"
+var divisiones = miCadena.split(" ", 3)
 
-console.log(anyString.substring(4)); // 'lla'
+console.log(divisiones)
+// Expected output: Hola,Mundo.,Cómo
