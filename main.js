@@ -1,9 +1,8 @@
-//                                      split 
-/* The split() method splits an object of type String into an array (vector) of strings by splitting the string into substrings. */
+//                                      toLowerCase 
+/* The toLowerCase() method returns the calling string value converted to lower case.  */
 
 
-var miCadena = "Hola Mundo. Cómo estás hoy?"
-var divisiones = miCadena.split(" ", 3)
+const sentence = 'THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.';
 
-console.log(divisiones)
-// Expected output: Hola,Mundo.,Cómo
+console.log(sentence.toLowerCase());
+// Expected output: "the quick brown fox jumps over the lazy dog."
