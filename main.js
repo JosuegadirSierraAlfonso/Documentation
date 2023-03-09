@@ -1,16 +1,14 @@
-//                                      Math.sqrt
-/* The Math.sqrt() static method returns the square root of a number. That is
-∀ x ≥ 0 , 𝙼𝚊𝚝𝚑.𝚜𝚚𝚛𝚝 ( 𝚡 ) = x = the unique  y ≥ 0  such that  y 2 = x */
+//                                      Math.ceil
+/* The Math.ceil() static method always rounds up and returns the smaller integer greater than or equal to a given number.*/
 
-function calcHypotenuse(a, b) {
-    return (Math.sqrt((a * a) + (b * b)));
-  }
-  
-  console.log(calcHypotenuse(3, 4));
-  // Expected output: 5
-  
-  console.log(calcHypotenuse(5, 12));
-  // Expected output: 13
-  
-  console.log(calcHypotenuse(0, 0));
-  // Expected output: 0
+console.log(Math.ceil(.95));
+// Expected output: 1
+
+console.log(Math.ceil(4));
+// Expected output: 4
+
+console.log(Math.ceil(7.004));
+// Expected output: 8
+
+console.log(Math.ceil(-7.004));
+// Expected output: -7
