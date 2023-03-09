@@ -1,15 +1,17 @@
-//                                      Math.atan
-/* The Math.atan() static method returns the inverse tangent (in radians) of a number, that is
-𝙼𝚊𝚝𝚑.𝚊𝚝𝚊𝚗 ( 𝚡 ) = arctan ( x ) = the unique  y ∊ [ − π 2 , π 2 ]  such that  tan ( y ) = x */
+//                                      Math.cos
+/* The Math.cos() static method returns the cosine of a number in radians.*/
 
 
-// Calculates angle of a right-angle triangle in radians
-function calcAngle(opposite, adjacent) {
-    return Math.atan(opposite / adjacent);
+function getCircleX(radians, radius) {
+    return Math.cos(radians) * radius;
   }
   
-  console.log(calcAngle(8, 10));
-  // Expected output: 0.6747409422235527
+  console.log(getCircleX(1, 10));
+  // Expected output: 5.403023058681398
   
-  console.log(calcAngle(5, 3));
-  // Expected output: 1.0303768265243125
+  console.log(getCircleX(2, 10));
+  // Expected output: -4.161468365471424
+  
+  console.log(getCircleX(Math.PI, 10));
+  // Expected output: -10
+  
