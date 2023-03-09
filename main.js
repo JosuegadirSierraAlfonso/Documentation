@@ -1,17 +1,18 @@
-//                                      Math.tan
-/* The Math.tan() static method returns the tangent of a number in radians.*/
+//                                      Math.atan2
+/* The Math.atan2() static method returns the angle in the plane (in radians) 
+between the positive x-axis and the ray from (0, 0) to the point (x, y), for Math.atan2(y, x).*/
 
 
-function getTanFromDegrees(degrees) {
-    return Math.tan(degrees * Math.PI / 180);
+function calcAngleDegrees(x, y) {
+    return Math.atan2(y, x) * 180 / Math.PI;
   }
   
-  console.log(getTanFromDegrees(0));
-  // Expected output: 0
+  console.log(calcAngleDegrees(5, 5));
+  // Expected output: 45
   
-  console.log(getTanFromDegrees(45));
-  // Expected output: 0.9999999999999999
+  console.log(calcAngleDegrees(10, 10));
+  // Expected output: 45
   
-  console.log(getTanFromDegrees(90));
-  // Expected output: 16331239353195370
+  console.log(calcAngleDegrees(0, 10));
+  // Expected output: 90
   
