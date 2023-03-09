@@ -1,19 +1,16 @@
-//                                      Math.random
-/* The Math.random() static method returns a floating-point, pseudo-random number 
-that's greater than or equal to 0 and less than 1, with approximately uniform 
-distribution over that range — which you can then scale to your desired range. 
-The implementation selects the initial seed to the random number generation algorithm; 
-it cannot be chosen or reset by the user. */
+//                                      Math.sqrt
+/* The Math.sqrt() static method returns the square root of a number. That is
+∀ x ≥ 0 , 𝙼𝚊𝚝𝚑.𝚜𝚚𝚛𝚝 ( 𝚡 ) = x = the unique  y ≥ 0  such that  y 2 = x */
 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
+function calcHypotenuse(a, b) {
+    return (Math.sqrt((a * a) + (b * b)));
   }
   
-  console.log(getRandomInt(3));
-  // Expected output: 0, 1 or 2
+  console.log(calcHypotenuse(3, 4));
+  // Expected output: 5
   
-  console.log(getRandomInt(1));
+  console.log(calcHypotenuse(5, 12));
+  // Expected output: 13
+  
+  console.log(calcHypotenuse(0, 0));
   // Expected output: 0
-  
-  console.log(Math.random());
-  // Expected output: a number from 0 to <1
