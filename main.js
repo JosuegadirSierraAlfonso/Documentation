@@ -1,16 +1,11 @@
-//                  Callbacks
-/* A callback function is a function passed into another
-function as an argument, which is then invoked inside
-the outer function to complete some kind of routine or action.*/
+//                  self-executing functions
+/* Self-executing functions in JavaScript are one
+of the most particular design patterns of this programming language.
+As its name indicates, this design pattern is characterized
+by the fact that functions call themselves after being declared.*/
 
 
-function greeting(name) {
-    alert(`Hello, ${name}`);
-  }
- 
-  function processUserInput(callback) {
-    const name = prompt("Please enter your name.");
-    callback(name);
-  }
- 
-  processUserInput(greeting);
+// self-executing functions
+(function () {
+    console.log("hello!!")
+  })()
