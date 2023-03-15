@@ -1,14 +1,16 @@
-//                  anonymous function
-/* An anonymous function is a function without a name.
-Note that if you don’t place the anonymous function inside the (),
-you’ll get a syntax error. The () makes the anonymous function an
-expression that returns a function object.
-An anonymous function is not accessible after its initial creation.
-Therefore, you often need to assign it to a variable.*/
+//                  Callbacks
+/* A callback function is a function passed into another
+function as an argument, which is then invoked inside
+the outer function to complete some kind of routine or action.*/
 
 
-let show = function() {
-    console.log('Anonymous function');
-};
-
-show();
+function greeting(name) {
+    alert(`Hello, ${name}`);
+  }
+ 
+  function processUserInput(callback) {
+    const name = prompt("Please enter your name.");
+    callback(name);
+  }
+ 
+  processUserInput(greeting);
