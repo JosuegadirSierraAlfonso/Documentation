@@ -1,15 +1,22 @@
-//                  Closures
-/* A closure or closure is a function that keeps references
-to the adjacent state (lexical scope). In other words,
-a closure allows access to the scope of an outer function from an inner function.
-In JavaScript, closures are created every time a function is created.*/
+//                  Arrow functions
+/* An arrow function expression is a compact alternative to a traditional function expression,
+with some semantic differences and deliberate limitations in usage:
 
 
-function iniciar() {
-    var nombre = "Mozilla";  // La variable nombre es una variable local creada por iniciar.
-    function mostrarNombre() {  // La función mostrarNombre es una función interna, una clausura.
-      alert(nombre)  // Usa una variable declarada en la función externa.
-    }
-    mostrarNombre()
-  }
-  iniciar()
+Arrow functions don't have their own bindings to this,
+arguments, or super, and should not be used as methods.
+Arrow functions cannot be used as constructors.
+Calling them with new throws a TypeError.
+ They also don't have access to the new.target keyword.
+Arrow functions cannot use yield within their body and cannot be created as generator*/
+
+
+const materials = [
+    'Hydrogen',
+    'Helium',
+    'Lithium',
+    'Beryllium'
+  ]
+ 
+  console.log(materials.map(material => material.length))
+  // Expected output: Array [8, 6, 7, 9]
