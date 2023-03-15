@@ -1,12 +1,12 @@
-//                           functions by expression
-/* The function keyword can be used to define a function inside an expression.
-You can also define functions using the function declaration or the arrow syntax.*/
+//                           functions as objects
+/* In JavaScript, functions are called Function Objects because
+they are objects. Just like objects, functions have properties and methods,
+they can be stored in a variable or an array, and be passed as arguments to other functions.*/
 
 
+function message() {
+    console.log("Greetings Linda!");
+}
 
-const getRectArea = function(width, height) {
-    return width * height;
-  };
- 
-  console.log(getRectArea(3, 4));
-  // Expected output: 12
+console.log(typeof message);               // => function
+console.log(message instanceof Object);    // => true
