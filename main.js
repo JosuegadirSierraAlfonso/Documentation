@@ -1,12 +1,12 @@
-//                           functions by declaration
-/* The function declaration defines a function with the specified parameters.
-You can also define functions using the Function constructor and a function expression.*/
+//                           functions by expression
+/* The function keyword can be used to define a function inside an expression.
+You can also define functions using the function declaration or the arrow syntax.*/
 
 
-function calcRectArea(width, height) {
+
+const getRectArea = function(width, height) {
     return width * height;
-}
-
-
-console.log(calcRectArea(5, 6));
-// Expected output: 30
+  };
+ 
+  console.log(getRectArea(3, 4));
+  // Expected output: 12
