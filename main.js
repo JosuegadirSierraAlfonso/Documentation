@@ -1,11 +1,15 @@
-//                  self-executing functions
-/* Self-executing functions in JavaScript are one
-of the most particular design patterns of this programming language.
-As its name indicates, this design pattern is characterized
-by the fact that functions call themselves after being declared.*/
+//                  Closures
+/* A closure or closure is a function that keeps references
+to the adjacent state (lexical scope). In other words,
+a closure allows access to the scope of an outer function from an inner function.
+In JavaScript, closures are created every time a function is created.*/
 
 
-// self-executing functions
-(function () {
-    console.log("hello!!")
-  })()
+function iniciar() {
+    var nombre = "Mozilla";  // La variable nombre es una variable local creada por iniciar.
+    function mostrarNombre() {  // La función mostrarNombre es una función interna, una clausura.
+      alert(nombre)  // Usa una variable declarada en la función externa.
+    }
+    mostrarNombre()
+  }
+  iniciar()
