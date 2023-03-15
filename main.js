@@ -1,12 +1,14 @@
-//                           functions as objects
-/* In JavaScript, functions are called Function Objects because
-they are objects. Just like objects, functions have properties and methods,
-they can be stored in a variable or an array, and be passed as arguments to other functions.*/
+//                  anonymous function
+/* An anonymous function is a function without a name.
+Note that if you don’t place the anonymous function inside the (),
+you’ll get a syntax error. The () makes the anonymous function an
+expression that returns a function object.
+An anonymous function is not accessible after its initial creation.
+Therefore, you often need to assign it to a variable.*/
 
 
-function message() {
-    console.log("Greetings Linda!");
-}
+let show = function() {
+    console.log('Anonymous function');
+};
 
-console.log(typeof message);               // => function
-console.log(message instanceof Object);    // => true
+show();
