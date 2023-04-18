@@ -1,17 +1,15 @@
-//                  Lexical scope
-/*Lexical scope describes how nested functions (also known as "children")
-have access to variables defined in the boundaries of their parents.*/
+//                  Callback
+/*A callback in JavaScript is a function that is passed as 
+an argument to another function and is called inside the main function at some specific time.*/
 
 
-const miFuncion = () => {
-    let miValor = 2;
-    console.log(miValor);
-
-    const funcionHija = () => {
-         console.log(miValor += 1);
-    }
-
-    funcionHija()
-}
-
-miFuncion()
+function multiplicar(num1, num2, callback) {
+    let resultado = num1 * num2;
+    callback(resultado);
+  }
+  
+  function mostrarResultado(res) {
+    console.log("El resultado es: " + res);
+  }
+  
+  multiplicar(5, 10, mostrarResultado); // Muestra "El resultado es: 50"
